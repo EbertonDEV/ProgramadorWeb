@@ -1,0 +1,95 @@
+<html>
+<head>
+	<tile>
+        Campos de Seleção
+	</title>
+
+</head>
+
+<body>
+	<header>
+		<h1> Curso de HTML!</h1>
+	</header>
+	<nav> </nav>
+	<section>
+        <H3>Exemplo de CHECKBOX!</H3>
+        Permine a seleção de varias opções!
+        <p></p>
+        <form method="post" action="recebe.php">
+            Quais cursos você fará?<br>
+            <input type="checkbox" name="html" value="1">HTML<br>
+            <input type="checkbox" name="css" value="1">CSS<br>
+            <input type="checkbox" name="javascript" value="1">JAVASCRIPT<br>
+        </form>
+        <hr>
+        <section>
+            <h3>Exemplo de Radio!</h3>
+            Permite a seleção de apenas um item!
+            <p></p>
+            <form method="post" action="recebe.php">
+                Qual curso você fará?<br>
+                <input type="radio" name="curso" value="html">HTML<br>
+                <input type="radio" name="curso" value="css">CSS<br>
+                <input type="radio" name="curso" value="javascript">JAVASCRIPT<br>
+            </form>
+            <hr>
+	</section>
+    <section>
+        <H3>Exemplo de CHECKBOX!</H3>
+        Usando o parametro CHECKED!
+        <p></p>
+        <form method="post" action="#">
+            Qual aparelho você possui?<br>
+            <input type="checkbox" name="notebook" value="sim">NOTEBOOK<br>
+            <input type="checkbox" name="tablet" value="sim">TABLET<br>
+            <input type="checkbox" name="celular" value="sim" checked>CELULAR<br>
+            Você prefere: <br>
+            <input type="radio" name="sistema" value="android" checked>ANDROID<br>
+            <input type="radio" name="sistema" value="ios">IOS<br>
+        </form>
+        <hr>
+        <section>
+            <section>
+                <H3>Exemplo de SELECT!</H3>
+                Usando os parametros é possivel mais de uma seleção!
+                <p></p>
+                <form method="post" action="#">
+                    Qual curso você fará?<br>
+                    <select name="curso">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JAVASCRIPT</option>
+                    </select>
+                    <hr>
+                    <br> 
+                    Campo utilizando input especifico para EMAIL!<br>
+                    <input type="email" name="email"><br>
+                    Campo utilizando input especifico para DATA!<br>
+                    <input type="date" name="data"><br>
+                    Campo utilizando input ESCALA<br>
+                    <input type="range" name="escala"><br>
+                    Campo utilizando input COR!<br>
+                    <input type="color" name="cor">
+                </form>
+                <hr>
+                <section>
+                    <section>
+                        <h3>Exemplo de LISTA!</h3>
+                        Permite a seleção ou a escrita no campo!
+                        <form method="post" action="recebe.php">
+                            <input list="cursos" name="curso">
+                            <datalist id="cursos">
+                                <option value="HTML">
+                                <option value="CSS">
+                                <option value="JAVASCRIPT">
+                            </datalist>
+                                                                                   
+                        </form>
+                        <hr>
+                </section>
+    
+	<footer>
+	</footer>
+</body>
+
+</html>
