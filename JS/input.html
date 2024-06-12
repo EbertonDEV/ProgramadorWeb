@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head charset="utf-8">
+    <title>EVENTOS DE INPUT JAVASCRIPT</title>
+    <script src="input.js"></script>
+ </head>
+ <body>
+    <h1>Eventos de Imput</h1>
+    <form name="formtest" onsubmit="return submeti()" onreset="resetei()">
+    <label for="nome">Nome:</label><input type="text" id="nome" name="nome" onblur="saidoCampo()"
+    onchange="mudei()" onfocus="entreiNoCampo()" onselect="selecionei()" onkeydown="teclaBaixo()"
+    onkeyup="teclaCima()"><br>
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+    </form>
+    <br>
+   <h2>log de ocorrencias</h2>
+   <div id="log"></div>
+ </body>
+</html>
